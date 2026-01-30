@@ -273,6 +273,13 @@
             font-family: var(--font-tech);
         }
 
+        .footer-links {
+            margin-top: 18px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+
         /* --- 动画 --- */
         @keyframes fadeUp {
             to {
@@ -324,6 +331,7 @@
         <div class="nav-links">
             <a href="#about">About</a>
             <a href="#works">Works</a>
+            <a href="#music">Music</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
@@ -367,35 +375,82 @@
             <div class="section-title">SELECTED WORKS</div>
             <div class="works-grid">
                 
-                <div class="work-card">
-                    <span class="work-year">2024 / VST PLUGIN</span>
-                    <h3 class="work-title">Granular Texture Synth</h3>
-                    <p class="work-desc">
-                        C++とJUCEフレームワークを用いて開発されたグラニュラー・シンセサイザー。
-                        予測不可能なテクスチャ生成に特化したSound Designツール。
-                    </p>
-                    <div class="work-arrow">→</div>
-                </div>
-
-                <div class="work-card">
+                <a href="https://www.bilibili.com/video/BV1HN411F7kH/?spm_id_from=333.1387.homepage.video_card.click&vd_source=7383248830163a63f8e65285b2507e1b" target="_blank" class="work-card">
                     <span class="work-year">2023 / MAX FOR LIVE</span>
-                    <h3 class="work-title">Stochastic Sequencer</h3>
+                    <h3 class="work-title">Auto Envelope</h3>
                     <p class="work-desc">
-                        Ableton Live用の確率的シーケンサーデバイス。
-                        Electronic Music制作における偶然性を制御し、複雑なリズムパターンを生成。
+                        MIDI信号のピッチに基づいてMacroを自動制御するM4Lプラグイン。
+                        音色パラメータを柔軟かつ直感的にコントロール可能。
                     </p>
                     <div class="work-arrow">→</div>
-                </div>
+                </a>
 
-                <div class="work-card">
-                    <span class="work-year">2022 / MUSIC PRODUCTION</span>
-                    <h3 class="work-title">EP: "Digital Silence"</h3>
+                <a href="https://drive.google.com/file/d/1nToWgJNL_VobUqn2PlWY0LZOQvpWa34A/view?usp=drive_link" target="_blank" class="work-card">
+                    <span class="work-year">開発中 / VST PLUGIN</span>
+                    <h3 class="work-title">Spectral Clipper</h3>
                     <p class="work-desc">
-                        フィールドレコーディングとデジタルノイズを融合させた、
-                        実験的Electronic作品集。全曲のMix/Masteringを担当。
+                        サウンドデザインを目的とした、FFTアルゴリズムに基づく唯一のClipperプラグイン。
+                        スペクトル領域での独自の歪み処理を実現。
                     </p>
                     <div class="work-arrow">→</div>
-                </div>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1EfX_p0o0GwkDQK2uLGYfF3WQ-gwupNn5/view?usp=sharing" target="_blank" class="work-card">
+                    <span class="work-year">TOOL / KONTAKT</span>
+                    <h3 class="work-title">Kontakt入庫ツール</h3>
+                    <p class="work-desc">
+                        サードパーティ製ライブラリをKontaktに登録し、レジストリに書き込むツール。
+                        従来のツールで正しく生成できなかった.nicntファイルの問題を解決。
+                    </p>
+                    <div class="work-arrow">→</div>
+                </a>
+
+            </div>
+        </section>
+
+        <section id="music">
+            <div class="section-title">MUSIC PORTFOLIO</div>
+            <div class="works-grid">
+
+                <a href="https://www.youtube.com/watch?v=Cb9sMw6ozno" target="_blank" class="work-card">
+                    <span class="work-year">商業音楽 / ゲーム</span>
+                    <h3 class="work-title">商業・ゲーム音楽</h3>
+                    <p class="work-desc">
+                        各種広告音楽、モバイルゲームを中心とした中国ゲーム向け楽曲制作。
+                        「第五人格」「決勝巅峰」など多数のタイトルに参加。
+                    </p>
+                    <div class="work-arrow">→</div>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=VV5r9Ilde7M" target="_blank" class="work-card">
+                    <span class="work-year">実験音楽 / EXPERIMENTAL</span>
+                    <h3 class="work-title">実験音楽</h3>
+                    <p class="work-desc">
+                        Granular、Spectralなどの技術を駆使して制作された実験的音楽作品。
+                        従来の音楽形式を超えた音響探求。
+                    </p>
+                    <div class="work-arrow">→</div>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=HvrMuU0SSjg" target="_blank" class="work-card">
+                    <span class="work-year">AI音楽 / REMIX</span>
+                    <h3 class="work-title">AI音楽</h3>
+                    <p class="work-desc">
+                        AI生成音楽をサンプルとしてリミックス。
+                        AIサウンドのリサンプリングによる新たな音楽表現の可能性を探求。
+                    </p>
+                    <div class="work-arrow">→</div>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=wsPV1sZbp9M" target="_blank" class="work-card">
+                    <span class="work-year">アルゴリズム音楽 / GENERATIVE</span>
+                    <h3 class="work-title">アルゴリズム音楽</h3>
+                    <p class="work-desc">
+                        Max/MSPでL-Systemアルゴリズムにより植物の自然成長をシミュレート。
+                        Ableton Liveで音楽生成、TouchDesignerで映像を駆動。
+                    </p>
+                    <div class="work-arrow">→</div>
+                </a>
 
             </div>
         </section>
@@ -419,6 +474,10 @@
 
     <footer>
         <p>&copy; 2025 SHEN LINLONG. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="2026new.html" class="tech-tag">2026 NEW</a>
+            <a href="https://www.youtube.com/watch?v=5lYSAfNwLhU" target="_blank" rel="noopener noreferrer" class="tech-tag">VTuber制作</a>
+        </div>
     </footer>
 
     <script>
